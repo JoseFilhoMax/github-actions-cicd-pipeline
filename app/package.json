@@ -1,0 +1,18 @@
+{
+  "name": "cicd-demo-app",
+  "version": "1.0.0",
+  "description": "Minimal Express API used to demonstrate the CI/CD pipeline",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test tests/",
+    "lint": "eslint src/ tests/ --no-eslintrc --env node,es2021 --parser-options=ecmaVersion:2021 || true"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
